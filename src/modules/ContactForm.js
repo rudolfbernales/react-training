@@ -27,8 +27,9 @@ export default class ContactForm extends React.Component {
         if(isSubmitted){
             return <Redirect to="/"/>
         }
+     
+        
         return (
-            
             <React.Fragment>
                 <div className="container">
                     <div className="row justify-content-center">
@@ -70,6 +71,7 @@ export default class ContactForm extends React.Component {
                                         <button className="btn btn-primary" onClick={this.handleClick}>
                                             Submit
                                         </button>
+                                        &nbsp;&nbsp;
                                         <Link to={"/"}>
                                             <button className="btn btn-primary">
                                                 Cancel

@@ -28,6 +28,9 @@ export default class ContactView extends React.Component {
         if (isSubmitted) {
             return <Redirect to="/" />
         }
+        if(item.length <= 0){
+            return <Redirect to="/" />
+        }
         return (
             <React.Fragment>
                 <div className="container">
